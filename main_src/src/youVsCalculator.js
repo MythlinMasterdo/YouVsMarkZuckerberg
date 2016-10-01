@@ -41,7 +41,7 @@ youVsZuckerberg(105000);
 youVsZuckerberg(80000);
 youVsZuckerberg(30000);
 youVsZuckerberg(23000);
-youVsZuckerberg(5)
+youVsZuckerberg(5);
 
 //19285
 function perspective (userIncome) {
