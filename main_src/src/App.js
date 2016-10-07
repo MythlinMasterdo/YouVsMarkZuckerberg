@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
 import './App.css';
+import './youVsZuckerberg.js';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {initialIncome: 1};
   }
+
   setIncome (event) {
     event.preventDefault();
-    console.log(this.refs.income.value);
-    this.setState({initialIncome: this.refs.income.value});
+    this.setState({initialIncome: this.refs.income.value}, function() {
+      console.log("state has been updated", this.state);
+    });
   }
+
+
+
   render() {
     return (
       <div className="App">
@@ -28,6 +34,5 @@ class App extends Component {
     );
   }
 }
-
 
 export default App;
